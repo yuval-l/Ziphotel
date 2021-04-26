@@ -1,0 +1,78 @@
+<!doctype html>
+<html dir="rtl" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/filter.css">
+		<link rel="stylesheet" href="css/StarRating.css">
+		<link rel="stylesheet" href="css/logo.css">
+        <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.checked {
+  color: orange;
+}
+</style>
+
+<link rel="stylesheet" href="css/nouislider.min.css">
+        <style>
+        html, body, #map {
+			<!-- star checked color -->
+			.checked {
+				color: orange;
+			}
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title>Ziphotel</title>
+    </head>
+    <body>
+		<div id="logoContainer">
+			<img style="border:transparent;" src="images/logo.png">
+		</div>
+		
+        <div id="map">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="js/tailDT.js"></script>
+		<script src="js/StarRating.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/wNumb.js"></script>
+        <script src="data/Hotels_1.js"></script>
+		<div id="rateYo"></div>
+		<script src="jquery.js"></script>
+		<script src="jquery.rateyo.js"></script>
+		<!-- load map and hotels, present hotels tooltips -->
+        <script src="js/map.js"></script>
+		<!-- Filter functions (Menu) -->
+		<script src="js/filtering.js"></script>
+	
+	<!-- Star rating filter -->
+	<div class="rating">
+	<span style="position: absolute; top: 410px; right: 25px; font-family:Calibri Light; font-size:25px; ">דירוג</span>
+	<span style="position: absolute; top: 410px; right: 220px; font-size:30px;" onclick="starmark(this)" id="1one" style="font-size:48px;cursor:pointer;" class="fa fa-star"></span>
+	<span style="position: absolute; top: 410px; right: 190px; font-size:30px;" onclick="starmark(this)" id="2one"  style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
+	<span style="position: absolute; top: 410px; right: 160px; font-size:30px;" onclick="starmark(this)" id="3one"  style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
+	<span style="position: absolute; top: 410px; right: 130px; font-size:30px;" onclick="starmark(this)" id="4one"  style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
+	<span style="position: absolute; top: 410px; right: 100px; font-size:30px;" onclick="starmark(this)" id="5one"  style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
+	</div>
+	
+	
+    </body>
+</html>
